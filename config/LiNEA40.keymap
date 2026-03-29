@@ -139,7 +139,7 @@
 &kp RS(NUMBER_1)  &kp RS(NUMBER_2)   &kp RS(NUMBER_3)  &kp RS(NUMBER_4)  &kp RS(NUMBER_5)              &kp LS(NUMBER_6)  &kp LS(NUMBER_7)     &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)
 &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                        &kp NUMBER_6      &kp NUMBER_7         &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0
 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp PLUS          &kp EQUAL                     &kp COLON         &kp SEMICOLON  &kp COMMA   &kp PERIOD  &kp SLASH
-&trans  &trans  &trans  &trans  &TAB     &TAB                                                     &trans  &DELETE            &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp TAB     &kp TAB                                                     &trans  &kp DELETE            &trans  &trans  &trans
             >;
         };
 

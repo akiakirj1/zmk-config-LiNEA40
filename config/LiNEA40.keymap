@@ -124,8 +124,8 @@
         default_layer {
             bindings = <
 &lt 3 Q          &kp W         &kp E               &kp R    &kp T                                      &kp Y        &kp U  &kp I                &kp O          &lt 3 P
-&mt LCTRL A         &kp S         &lt 5 D               &kp F    &kp G                                      &kp H        &kp J  &lt 5 K                &kp L          &mt RCTRL ENTER
-&mt LEFT_SHIFT Z          &kp X         &kp C               &kp V    &kp B                                      &kp N        &kp M  &kp COMMA            &kp DOT        &mt RIGHT_SHIFT MINUS
+&mt LCTRL A      &kp S         &lt 5 D             &kp F    &kp G                                      &kp H        &kp J  &lt 5 K              &kp L          &mt RCTRL ENTER
+&mt LEFT_SHIFT Z &kp X         &kp C               &kp V    &kp B                                      &kp N        &kp M  &kp COMMA            &kp DOT        &mt RIGHT_SHIFT MINUS
 &kp LEFT_WIN  &mkp MB2  &mkp MB1  &none  &lt 1 SPACE  &lt 2 LANG1    &lt 2 ESC  &lt 1 BSPC         &lt 3 LANG2  &kp BACKSLASH  &mkp MB4
             >;
 
@@ -136,10 +136,10 @@
 
         NUM {
             bindings = <
-&kp RS(NUMBER_1)  &kp RS(NUMBER_2)   &kp RS(NUMBER_3)  &kp RS(NUMBER_4)  &kp RS(N5)                              &kp RS(NUMBER_6)  &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp LS(N0)
-&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4      &kp N5        &kp NUMBER_6      &kp N7         &kp N8      &kp N9      &kp N0
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp PLUS          &kp EQUAL   &kp COLON         &kp SEMICOLON  &kp COMMA   &kp PERIOD  &kp SLASH
-&trans  &trans  &trans  &trans  &TAB  &TAB    &trans  &DELETE            &trans  &trans  &trans
+&kp RS(NUMBER_1)  &kp RS(NUMBER_2)   &kp RS(NUMBER_3)  &kp RS(NUMBER_4)  &kp RS(Number_5)              &kp RS(NUMBER_6)  &kp LS(Number_7)     &kp LS(Number_8)  &kp LS(Number_9)  &kp LS(N0)
+&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4      &kp N5                        &kp NUMBER_6      &kp N7         &kp N8      &kp N9      &kp N0
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp PLUS          &kp EQUAL                     &kp COLON         &kp SEMICOLON  &kp COMMA   &kp PERIOD  &kp SLASH
+&trans  &trans  &trans  &trans  &TAB     &TAB                                                     &trans  &DELETE            &trans  &trans  &trans
             >;
         };
 

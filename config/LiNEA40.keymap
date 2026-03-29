@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 150
 
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
@@ -19,6 +19,9 @@
     flavor = "tap-preferred";
     quick-tap-ms = <0>;
     tapping-term-ms = <300>;
+};
+
+&lt {
 };
 
 //mouse cursol
@@ -67,49 +70,27 @@
             <&zip_xy_to_scroll_mapper>;
     };
 };
-
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        ZenkakuHankaku {
-            bindings = <&kp GRAVE>;
-            key-positions = <11 12>;
-        };
-
-        DeleteKey {
-            bindings = <&kp DEL>;
-            key-positions = <7 8>;
-        };
-
-        InsertKey {
-            bindings = <&kp INS>;
-            key-positions = <6 7>;
-        };
-
-        CenterClick {
-            bindings = <&mkp MB3>;
-            key-positions = <17 16>;
-        };
-
-        RightClick {
-            bindings = <&mkp MB2>;
-            key-positions = <18 17>;
-        };
-
-        PrevClick {
-            bindings = <&mkp MB4>;
-            key-positions = <27 28>;
-        };
-
-        ClickNext {
-            bindings = <&mkp MB5>;
-            key-positions = <26 27>;
+    macros {
+        to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_0";
         };
     };
 
     behaviors {
-        re_kp: sensor_rotate_kp {
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&to_layer_0>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+      re_kp: sensor_rotate_kp {
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;

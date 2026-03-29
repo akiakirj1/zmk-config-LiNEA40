@@ -136,8 +136,8 @@
 
         NUM {
             bindings = <
-&kp RS(NUMBER_1)  &kp RS(NUMBER_2)   &kp RS(NUMBER_3)  &kp RS(NUMBER_4)  &kp RS(Number_5)              &kp RS(NUMBER_6)  &kp LS(Number_7)     &kp LS(Number_8)  &kp LS(Number_9)  &kp LS(N0)
-&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4      &kp N5                        &kp NUMBER_6      &kp N7         &kp N8      &kp N9      &kp N0
+&kp RS(NUMBER_1)  &kp RS(NUMBER_2)   &kp RS(NUMBER_3)  &kp RS(NUMBER_4)  &kp RS(Number_5)              &kp RS(NUMBER_6)  &kp LS(Number_7)     &kp LS(Number_8)  &kp LS(Number_9)  &kp LS(Number_0)
+&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3      &kp NUMBER_4      &kp Number_5                        &kp NUMBER_6      &kp Number_7         &kp Number_8      &kp Number_9      &kp Number_0
 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH     &kp PLUS          &kp EQUAL                     &kp COLON         &kp SEMICOLON  &kp COMMA   &kp PERIOD  &kp SLASH
 &trans  &trans  &trans  &trans  &TAB     &TAB                                                     &trans  &DELETE            &trans  &trans  &trans
             >;
